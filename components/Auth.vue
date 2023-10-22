@@ -46,7 +46,7 @@ const handleLogin = async () => {
                             <input
                             type="submit"
                             class="button block"
-                            :value="loading ? 'Loading' : 'Send magic link'"
+                            :value="loading ? 'Loading' : 'Sign up'"
                             :disabled="loading"
                             />
                         </div>
@@ -81,7 +81,7 @@ const handleLogin = async () => {
 .form-side{
     border: 1px solid black;
     width: 50%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,8 +94,12 @@ const handleLogin = async () => {
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 70%;
+    height: 50%;
     border: 1px solid black;
+}
+
+.form > div {
+    margin: 1rem auto;
 }
 
 </style>
